@@ -2,30 +2,59 @@ import React, {useState} from 'react'
 import '../../assets/login/login.css'
 
 function LoginForm() {
-    const [email, setEmail]=useState("")
-    return (<div className="todo-app">
+    const adminUser = {
+        email:"mish@gmail.com",
+        password:"mishmish"
+    }
+    const [user, setUser] = useState({
+        name:"",
+        email:""
+    })
+    // const [email, setEmail]=useState("")
+    const handleChange = e=>{
+
+    };
+
+    const handleSubmit=e=>{
+
+    };
+
+    return (
+        
+        
+        <div>
+        {(user.email != "")?(
+            <div>
+                <p>User Already Logged In</p>
+            </div>
+        ):(
+
+    <div className="todo-app">
+
         <p className="login-text">Login</p>
-        <form className="login-form">
+        <form className="login-form" onSubmit={this.handleSubmit}>
             <input className="login-input email"
             placeholder="Email"
-            type="text"
+            type="email"
             required
+            onChange={this.handleChange}
             name="email"
              />
              <div className="divider"></div>
-                <input 
+                {/* <input 
                     className="login-input username"
                     name="username"
                     type="text"
                     required
                     placeholder="Username"
                 />
-                <div className="divider"></div>
+                <div className="divider"></div> */}
                 <input 
                     className="login-input password"
                     name="password"
                     type="password"
                     required
+                    onChange={this.handleChange}
                     placeholder="Password"
                 />
                 <div className="divider"></div>
@@ -37,7 +66,7 @@ function LoginForm() {
                 </div>
                     <p className="forgot"><u>Forgot Password</u></p>
                 </div>
-            <button className="login-button">Login</button>
+            <button onSubmit={this.handleSubmit} className="login-button">Login</button>
         </form>
         
         
@@ -49,6 +78,9 @@ function LoginForm() {
 
 
         </div>
+        )}
+    </div>
+    
     )
 }
 
