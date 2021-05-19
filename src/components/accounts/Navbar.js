@@ -13,8 +13,10 @@ function NavBar() {
     <Nav className="mr-auto">
       <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/login">Login</Nav.Link>
+      
       <Nav.Link href="/register">Register</Nav.Link>
       <Nav.Link href="/resource">Resource</Nav.Link>
+      <Nav.Link href="/todos">Todos</Nav.Link>
 
     </Nav>
     <Form inline>

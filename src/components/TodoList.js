@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import Todo from './Todo';
-import TodoForm from './TodoForm'
+import TodoForm from './TodoForm';
+import '../assets/login/login.css';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
@@ -40,7 +41,7 @@ function TodoList() {
         setTodos(updatedTodos);
     };
     return (
-        <div>
+        <div className="todo-app">
             <h1>What's The plan for Today</h1>
             <TodoForm onSubmit={addTodo}/>
             <Todo todos={todos} 

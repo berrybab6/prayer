@@ -6,6 +6,7 @@ import LoginForm from './components/accounts/LoginForm';
 import NavBar from './components/accounts/Navbar';
 import Register from './components/accounts/Register';
 import Resource from './components/resources/Resource';
+import TodoList from './components/TodoList';
 // import TodoList from './components/TodoList';
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
       <Route path="/resource">
         {/* <Resource /> */}
         <Resource />
+      </Route>
+      <Route path="/todos">
+        <TodoList />
       </Route>
     </Switch>
     {/* </BrowserRouter> */}
