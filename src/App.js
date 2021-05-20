@@ -1,7 +1,6 @@
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Home from './components/accounts/Home';
-import Login from './components/accounts/Login';
 import LoginForm from './components/accounts/LoginForm';
 import NavBar from './components/accounts/Navbar';
 import Register from './components/accounts/Register';

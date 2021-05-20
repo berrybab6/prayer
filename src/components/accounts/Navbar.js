@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
-import {Route, Switch, BrowserRouter, Link} from 'react-router-dom';
-import { Navbar, Nav, Container, Form, FormControl,Button } from 'react-bootstrap';
+import React from 'react';
+
+import { Navbar, Nav } from 'react-bootstrap';
 
 
 function NavBar() {
-  const [showNav, setShowNav] = useState(false);
+  // const [showNav, setShowNav] = useState(false);
     return (
 
       <>
@@ -12,17 +12,21 @@ function NavBar() {
     <Navbar.Brand href="/home">EdTech</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/home">Home</Nav.Link>
-      <Nav.Link href="/login">Login</Nav.Link>
-      
-      <Nav.Link href="/register">Register</Nav.Link>
       <Nav.Link href="/resource">Resource</Nav.Link>
       <Nav.Link href="/todos">Todos</Nav.Link>
 
     </Nav>
-    <Form inline>
+
+    <Nav className="mr-sm-2"  inline >
+      <Nav.Link href="/login" className="mr-sm-2" >Login</Nav.Link>
+      
+      <Nav.Link href="/register">Register</Nav.Link>
+
+    </Nav>
+    {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-info">Search</Button>
-    </Form>
+    </Form> */}
   </Navbar>
   <br />
   </>

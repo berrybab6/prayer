@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState} from 'react'
 import Todo from './Todo';
 import TodoForm from './TodoForm';
 import '../assets/login/login.css';
@@ -33,7 +33,7 @@ function TodoList() {
 
     const completeTodo = id=>{
         let updatedTodos = todos.map(todo=>{
-            if(todo.id ==id){
+            if(todo.id ===id){
                 todo.isComplete =!todo.isComplete;
             }
             return todo;
