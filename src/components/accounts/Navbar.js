@@ -9,7 +9,7 @@ function NavBar() {
 
       <>
   <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="/home">EdTech</Navbar.Brand>
+    <Navbar.Brand href="/resource">EdTech</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/resource">Resource</Nav.Link>

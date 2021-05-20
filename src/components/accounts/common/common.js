@@ -13,7 +13,7 @@ export const setUserSession = (token, user)=>{
     sessionStorage.setItem("user", JSON.stringify(user));
 }
 
-export const removeSession = ()=>{
+export const removeUserSession = ()=>{
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("user");
 }

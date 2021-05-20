@@ -34,11 +34,11 @@ function LoginForm(props) {
 
     }).catch(error=>{
         setLoading(false);
-        if(error.res.status===400 || error.res.status===401 || error.res.status===404){
-            setError("Invalid Request")
-        }else{
-            setError("Server Error");
-        }
+        // if(error.res.status===400 || error.res.status===401 || error.res.status===404){
+        //     setError("Invalid Request")
+        // }else{
+        //     setError("Server Error");
+        // }
         console.log("Errror", error);
         
     })
