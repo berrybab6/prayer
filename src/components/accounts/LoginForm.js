@@ -18,7 +18,6 @@ function LoginForm(props) {
     const [loading, setLoading]=useState(false);
 
 
-    const history = useHistory();
 
     const handleLogin=()=>{
         setError(null);
@@ -30,15 +29,15 @@ function LoginForm(props) {
       console.log(res);
       setUserSession(res.data.token, res.data.user);
       console.log(res.data.user.email);
-      history.push("/home");
+      this.history.push("/home");
 
     }).catch(error=>{
         setLoading(false);
-        // if(error.res.status===400 || error.res.status===401 || error.res.status===404){
-        //     setError("Invalid Request")
-        // }else{
-        //     setError("Server Error");
-        // }
+        if(error.status===400 || error.status===401 || error.status===404){
+            setError("Invalid Request")
+        }else{
+            setError("Server Error");
+        }
         console.log("Errror", error);
         
     })

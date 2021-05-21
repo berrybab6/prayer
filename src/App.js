@@ -1,13 +1,16 @@
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
 import './App.css';
+
+import PrivateRoute from './components/PrivateRoute';
+import PublicRoute from './components/PublicRoute';
+import TodoList from './components/TodoList';
 import Home from './components/accounts/Home';
 import LoginForm from './components/accounts/LoginForm';
 import NavBar from './components/accounts/Navbar';
 import Register from './components/accounts/Register';
-import PrivateRoute from './components/PrivateRoute';
-import PublicRoute from './components/PublicRoute';
 import Resource from './components/resources/Resource';
-import TodoList from './components/TodoList';
+import Users from './components/User/users';
 // import TodoList from './components/TodoList';
 
 function App() {
@@ -39,6 +42,9 @@ function App() {
       </Route>
       <Route path="/todos">
         <TodoList />
+      </Route>
+      <Route path="/users">
+        <Users />
       </Route>
     </Switch>
     {/* </BrowserRouter> */}

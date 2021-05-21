@@ -14,6 +14,7 @@ function NavBar() {
       <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/resource">Resource</Nav.Link>
       <Nav.Link href="/todos">Todos</Nav.Link>
+      <Nav.Link href="/users">Users</Nav.Link>
 
     </Nav>
 

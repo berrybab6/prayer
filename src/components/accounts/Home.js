@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 import { useHistory } from 'react-router-dom';
 
-import {getUsers, removeUserSession } from './common/common';
+import {getUsers, removeUserSession, getToken } from './common/common';
 
 
 function Home() {
@@ -13,11 +13,12 @@ function Home() {
         removeUserSession();
         history.push("/login");
     }
+    // const token = 
     return (
         <div>
-            <p>Home Sweet Home</p>
-
-            <Button variant="outline-danger" onClick = {handleLogout}>Logout</Button>
+            <p>Home Sweet Home, </p>
+            {getToken()?
+            <Button variant="outline-danger" onClick = {handleLogout}>Logout</Button>:<h1>Login</h1>}
         </div>
     )
 }
