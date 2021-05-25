@@ -56,10 +56,11 @@ body {
   }
 
   .userPic{
-    width:150px;
-    height: 100px;
+    width:auto;
+    height: auto;
     
     /* width: 100%; */
+    min-height: 100px;
     margin: 10px 10px;
   }
   
