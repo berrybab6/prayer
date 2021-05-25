@@ -8,7 +8,12 @@
     justify-content: start;
     width: 520px;
     min-height: 500px;
-    background: #161a2b;
+    /* background-color: white; */
+    border-color:black;
+    border: 3px solid;
+    /* background:url('../images/images/dave-J9L1jMXRvZA-unsplash.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
